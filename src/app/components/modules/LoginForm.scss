@@ -1,0 +1,69 @@
+.LoginForm {
+  max-width: 28rem;
+  margin: 1rem auto 0.5rem auto;
+  label {
+    text-transform: none;
+  }
+  form {
+    margin-top: 1.5rem;
+  }
+
+  .login-modal-buttons-mobile {
+    position: fixed;
+    background: #fdfcfc;
+    width: 100%;
+    bottom: 0;
+    z-index: 99;
+    left: 0;
+    border-top: solid 1px #eeecec;
+    padding: 1px;
+    height: 45px !important;
+
+    .button {
+      width: 48%;
+      margin: 2px !important;
+      font-size: inherit;
+    }
+  }
+
+  @media screen and (min-width: 40em) {
+    .loginMobile {
+      display: none;
+    }
+  }
+}
+
+.sign-up {
+  .button {
+    background-color: transparent;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    text-transform: none;
+  }
+  .button.hollow {
+    border: 1px solid #ddd;
+    color: $color-blue-black;
+    transition: 0.2s all ease-in-out;
+    @include font-size(16px);
+
+    &:hover {
+      border: 1px solid $primary-brand-color-dark;
+      color: $primary-brand-color-dark;
+    }
+  }
+  em {
+    font-weight: bold;
+    font-style: normal;
+  }
+  hr {
+    margin: 1.75rem auto 2rem auto;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.LoginForm__save-login {
+  margin-top: 0.5rem;
+}
