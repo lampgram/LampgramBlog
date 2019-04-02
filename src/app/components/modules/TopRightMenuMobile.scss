@@ -1,0 +1,27 @@
+.mobileTop {
+  justify-content: space-around;
+
+  .Icon > svg, .Icon span.icon {
+    width: 2rem;
+    height: 1.7rem;
+  }
+
+  .Userpic {
+    width: 50px !important;
+    height: 50px !important;
+    margin-left: -9px;
+    margin-top: -7px;
+  }
+}
+
+.circleTabs {
+    border-radius: 50%;
+    padding: 0px;
+    padding-top: 7px;
+    padding-left: 9px;
+    margin-top: -13px;
+    width: 50px !important;
+    height: 50px !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px;
+    background: #fdfcfc;
+}
