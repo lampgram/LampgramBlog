@@ -1,0 +1,44 @@
+
+.Settings {
+  .button.disabled, .button[disabled] {
+    opacity: 0.25;
+    cursor: not-allowed;
+  }
+  .success, .error {
+    text-transform: capitalize;
+    padding-left: 8px;
+  }
+  .success {
+    @include themify($themes) {
+      color: themed('textColorAccent');
+    }
+  }
+  p.error {
+    position: relative;
+    top: 4px;
+    line-height: 1.2;
+  }
+  div.error {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .Settings {
+    .updateMobile {
+      position: fixed;
+      background: #fdfcfc;
+      width: 100%;
+      bottom: 0;
+      z-index: 99;
+      left: 0;
+      border-top: solid 1px #eeecec;
+      padding: 2px;
+      text-align: center;
+      height: 45px !important;
+      .button {
+            width: 50vw;
+      }
+    }
+  }
+}
