@@ -1,0 +1,151 @@
+.tag-wrap {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 100vw;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 39.4rem) {
+  .tagboxes {
+    a {
+      padding: 0 !important;
+    }
+  }
+}
+
+// /* Large and above */
+@media screen and (min-width: 890px) {
+  .tag-wrap {
+    max-width: 890px;
+  }
+}
+
+.image {
+  height: 4.6em;
+  width: 6.5em;
+  margin: 5px 4px 5px 4px;
+  display: inline-block;
+  line-height: 9em;
+}
+
+.image-container {
+  vertical-align: middle;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  .tagboxes {
+    border: 1px solid #eee;
+    background-size: cover;
+    color: white;
+    background-blend-mode: color;
+    border-radius: 5px;
+    font-weight: 900;
+    text-align: center;
+
+    h2 {
+      font-size: 97%;
+      line-height: 6 !important;
+      font-weight: 900;
+    }
+
+    &:hover {
+      background-blend-mode: normal;
+      color: white;
+    }
+
+    &:focus {
+      background-blend-mode: unset;
+      color: white;
+    }
+
+    a {
+      color: white;
+      padding: 32px 16px 10px 16px;
+    }
+  }
+}
+
+
+.you {
+  background-image: url(../../assets/images/for-you-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.life {
+  background-image: url(../../assets/images/life-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.grow {
+  background-image: url(../../assets/images/grow-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.edibles {
+  background-image: url(../../assets/images/edibles-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.nugporn {
+  background-image: url(../../assets/images/nugporn-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.art {
+  background-image: url(../../assets/images/art-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.news {
+  background-image: url(../../assets/images/news-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.cbd {
+  background-image: url(../../assets/images/cbd-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.health {
+  background-image: url(../../assets/images/health-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.legalize {
+  background-image: url(../../assets/images/legalize-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.nsfw {
+  background-image: url(../../assets/images/nsfw-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.contest {
+  background-image: url(../../assets/images/contest-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.dabs {
+  background-image: url(../../assets/images/dabs-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.strains {
+  background-image: url(../../assets/images/strains-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.review {
+  background-image: url(../../assets/images/review-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.smoking {
+  background-image: url(../../assets/images/smoking-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.guide {
+  background-image: url(../../assets/images/guide-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.offtopic {
+  background-image: url(../../assets/images/offtopic-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
+.witness {
+  background-image: url(../../assets/images/witness-tag.jpg), linear-gradient(0deg, #292929, rgba(255, 255, 0, 0));
+}
+
