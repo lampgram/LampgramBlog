@@ -1,0 +1,136 @@
+.row {
+  max-width: 900px;
+}
+
+.menu > li > a {
+  line-height: 1.5rem;
+}
+
+.tooltip {
+  margin-top: -1rem;
+}
+
+.dropdown-pane {
+  width: auto;
+  padding: 0;
+  z-index: 1000;
+  font-size: inherit;
+  background-color: $color-white;
+
+  .VerticalMenu {
+    a:hover {
+      background-color: #f6f6f6;
+      color: $primary-brand-color-dark;
+    }
+  }
+}
+
+a {
+  transition: 0.2s all ease-in-out;
+  color: $primary-link-color;
+
+  &:hover, &:focus {
+    color: $primary-link-hover-color;
+  }
+}
+
+div[role=dialog] {
+  z-index: 500;
+}
+
+input[type=submit].disabled, input[type=submit].disabled:focus {
+  opacity: 1;
+  cursor: inherit;
+  background-color: $medium-gray;
+}
+
+button, .button {
+  text-transform: uppercase;
+}
+
+hr {
+  margin: 0.2rem;
+}
+
+.column, .columns {
+  min-width: 0;
+}
+
+.callout {
+  margin-top: 1rem;
+  @include themify($themes) {
+    color: themed('textColorPrimary');
+    background-color: themed('highlightBackgroundColor');
+    border: themed('border');
+  }
+}
+
+.close-button {
+  transition: color 0.2s ease-in-out;
+  @include themify($themes) {
+    color: themed('textColorSecondary');
+  }
+  &:hover, &:focus {
+    @include themify($themes) {
+      color: themed('textColorAccent');
+    }
+  }
+}
+
+hr {
+  @include themify($themes) {
+    border-bottom: themed('border');
+  }
+}
+
+table {
+
+}
+
+thead, tbody, tfoot {
+  @include themify($themes) {
+    background-color: themed('backgroundColor');
+  }
+}
+
+thead {
+  @include themify($themes) {
+    background-color: themed('tableRowEvenBackgroundColor');
+    color: themed('textColorPrimary');
+  }
+}
+
+tbody tr:nth-child(even) {
+  @include themify($themes) {
+    background-color: themed('tableRowEvenBackgroundColor');
+  }
+}
+
+.reveal-overlay {
+  transition: 0.2s all ease-in-out;
+}
+
+.reveal {
+  border-radius: 5px;
+  border: transparent;
+  transition: 0.2s all ease-in-out;
+  .button {
+    @extend .e-btn;
+    @extend .e-btn--black;
+    min-width: 100px;
+  }
+}
+
+.button {
+  text-transform: none;
+
+  &.primary {
+    color: $white;
+    background-color: $primary-color;
+    &:hover {
+      color: smart-scale($white);
+      background-color: smart-scale($primary-color, 10%);
+    }
+  }
+}
+
