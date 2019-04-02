@@ -1,0 +1,60 @@
+
+.Witnesses {
+  .extlink path {
+    transition: 0.2s all ease-in-out;
+    @include themify($themes) {
+      fill: themed('textColorAccent');
+    }
+  }
+  a:hover .extlink path {
+    transition: 0.2s all ease-in-out;
+    @include themify($themes) {
+      fill: themed('textColorAccentHover');
+    }
+  }
+  td > a {
+    @extend .link;
+    @extend .link--primary;
+  }
+
+  .button {
+    background-color: $color-text-teal;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.20);
+    transition: 0.2s all ease-in-out;
+    &:hover {
+      background-color: $primary-brand-color;
+    }
+  }
+
+  table {
+    width:100vw;
+  }
+
+  td, th {
+
+    max-width: 30vw;
+    @media screen and (max-width: 40em) {
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .input-group-vote {
+    position: fixed;
+    background: #fdfcfc;
+    width: 100%;
+    bottom: 0;
+    z-index: 99;
+    left: 0;
+    border-top: solid 1px #eeecec;
+    padding: 2px 0px 2px 14px;
+    text-align: center;
+    height: 45px !important;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+}
+
