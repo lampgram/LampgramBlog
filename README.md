@@ -7,3 +7,5 @@
   ```
   nmp start
   ```
+  
+  Problem with ```import Koa from 'koa';```
