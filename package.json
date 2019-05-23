@@ -180,7 +180,7 @@
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0",
     "supertest": "^1.2.0",
-    "webpack-bundle-analyzer": "^2.9.0"
+    "webpack-bundle-analyzer": "^3.3.2"
   },
   "optionalDependencies": {
     "fsevents": "*"
